@@ -10,7 +10,7 @@ menu = Menu()
 isOn = True
 
 while isOn:
-    user_input = input("What would you like? (espresso/latte/cappuccino): ")
+    user_input = input(f"What would you like? ({menu.get_items()}): ")
     if user_input == 'off':
         # Turn Machine Off
         isOn = False
